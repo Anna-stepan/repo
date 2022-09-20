@@ -10,9 +10,12 @@ PrintArray(numbers);
 int count = 0;
 
 for (int z = 0; z < numbers.Length; z++)
-if (numbers[z] % 2 == 0)
-count++;
-
+{
+    if (numbers[z] % 2 == 0)
+    {
+        count++;
+    }
+ }
 Console.WriteLine($"всего чисел: {numbers.Length}, из них чётных: {count}");
 
 void FillArrayRandomNumbers(int[] numbers)
@@ -46,7 +49,9 @@ PrintArray(numbers);
 int sum = 0;
 
 for (int z = 1; z < numbers.Length; z+=2)
-    sum = sum + numbers[z];
+    {
+        sum = sum + numbers[z];
+    }
 
     Console.WriteLine($"всего чисел: {numbers.Length}, сумма элементов на нечётных позициях = {sum}");
 
@@ -67,8 +72,6 @@ void PrintArray(int[] numbers)
     Console.Write("]");
     Console.WriteLine();
 }
-
-
 
 
 //38. Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
@@ -113,3 +116,6 @@ void PrintArray(double[] numbers)
     Console.Write("]");
     Console.WriteLine();
 }
+
+
+
