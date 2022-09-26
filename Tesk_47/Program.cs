@@ -95,7 +95,7 @@ for (int j = 0; j < numbers.GetLength(1); j++)
         avarage = (avarage + numbers[i, j]);
     }
     avarage = (avarage / n) ;
-    avarage = Math.Round(avarage, 2);
+    avarage = Math.Round(avarage, 1);
     Console.Write(avarage + "; ");
 }
 Console.WriteLine();
