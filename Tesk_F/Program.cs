@@ -1,4 +1,4 @@
-﻿Console.Write("Сколько элементов Вы хотите ввести? ");
+﻿Console.Write("Какое количество элементов Вы хотите ввести? ");
 int size = Convert.ToInt32(Console.ReadLine());
 
 string[] arrayStrings = new string[size];
